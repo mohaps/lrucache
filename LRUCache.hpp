@@ -149,7 +149,7 @@ namespace lru
 			{
 				Node<Key, Value>* n = new Node<Key, Value>(key, value);
 				m_cache[key] = n;
-				std::cout<<"insering ("<<key<<")=("<<value<<")"<<std::endl;
+				//std::cout<<"insering ("<<key<<")=("<<value<<")"<<std::endl;
 				m_keys.push(n);
 				prune();
 			}
@@ -158,7 +158,7 @@ namespace lru
 
 		const Value& get(const Key& key)
 		{
-			std::cout<<"get("<<key<<")"<<std::endl;
+			//std::cout<<"get("<<key<<")"<<std::endl;
 			typename MapType::iterator iter = m_cache.find(key);
 			if(iter == m_cache.end())
 			{
