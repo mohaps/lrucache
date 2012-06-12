@@ -1,12 +1,14 @@
-lrucache
+LRUCache
 ========
 
 a header only C++ LRU Cache template class that allows you to define key, value and optionally the Map type. uses a double linked list and a std::map style container to provide fast insert, delete and update
 
+No dependencies other than the C++ standard library.
+
 
 Usage Example
 ---------------
-
+```cpp
 #include "LRUCache.hpp"
 namespace lru
 {
@@ -32,3 +34,16 @@ int main(int argc, char **argv)
 	lru::test();
 	return 0;
 }
+```
+
+
+License
+-------
+
+BSD License
+
+
+Comments/Crits
+---------------
+
+Please contact author at mohaps@gmail.com
