@@ -51,3 +51,7 @@ Comments/Crits
 ---------------
 
 Please contact author at mohaps@gmail.com
+
+Links
+--------
+* Wikipedia Entry on LRU Caching : http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used
