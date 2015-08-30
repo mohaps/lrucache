@@ -126,7 +126,7 @@ struct Node {
 	void walk(Visitor& visitorFunc) {
 		visitorFunc(*this);
 		if (this->next) {
-			this->next->walk<Visitor>(visitorFunc);
+			this->next->walk(visitorFunc);
 		}
 	}
 };
@@ -226,6 +226,7 @@ public:
 		ScopedLock scoped(m_lock);
 		typename MapType::iterator iter = m_cache.find(key);
 		if (iter != m_cache.end()) {
+			iter->second->value = value;
 			m_keys.remove(iter->second);
 			m_keys.push(iter->second);
 		} else {
