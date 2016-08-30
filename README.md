@@ -1,6 +1,8 @@
 LRUCache
 ========
-** Looking for a c++11 version? Try out : https://github.com/mohaps/lrucache11 **
+
+Looking for a c++11 version? Try out : https://github.com/mohaps/lrucache11
+----------------------------------------------------------------------------
 
 a header only C++ LRU Cache template class that allows you to define key, value and optionally the Map type. uses a double linked list and a std::map style container to provide fast insert, delete and update
 
